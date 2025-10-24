@@ -1,0 +1,95 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#000000"/>
+  
+  <!-- Grid pattern background -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00d4ff" stroke-width="0.5" opacity="0.1"/>
+    </pattern>
+    
+    <!-- Glow filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  
+  <!-- Diagonal accent lines -->
+  <line x1="0" y1="100" x2="400" y2="0" stroke="#00d4ff" stroke-width="1" opacity="0.3"/>
+  <line x1="800" y1="630" x2="1200" y2="530" stroke="#00d4ff" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Corner brackets -->
+  <path d="M 50 50 L 50 100 M 50 50 L 100 50" stroke="#00d4ff" stroke-width="2" opacity="0.6"/>
+  <path d="M 1150 50 L 1100 50 M 1150 50 L 1150 100" stroke="#00d4ff" stroke-width="2" opacity="0.6"/>
+  <path d="M 50 580 L 50 530 M 50 580 L 100 580" stroke="#00d4ff" stroke-width="2" opacity="0.6"/>
+  <path d="M 1150 580 L 1150 530 M 1150 580 L 1100 580" stroke="#00d4ff" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Logo circle with glow -->
+  <circle cx="600" cy="220" r="80" fill="none" stroke="#00d4ff" stroke-width="3" filter="url(#glow)" opacity="0.8"/>
+  <circle cx="600" cy="220" r="60" fill="none" stroke="#00d4ff" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Logo symbol (simplified geometric design) -->
+  <g transform="translate(600, 220)">
+    <!-- Central hexagon -->
+    <path d="M 0,-40 L 35,-20 L 35,20 L 0,40 L -35,20 L -35,-20 Z" 
+          fill="none" stroke="#00d4ff" stroke-width="2.5" filter="url(#glow)"/>
+    
+    <!-- Inner connections -->
+    <line x1="0" y1="-40" x2="0" y2="-20" stroke="#00d4ff" stroke-width="2" opacity="0.8"/>
+    <line x1="35" y1="-20" x2="20" y2="-10" stroke="#00d4ff" stroke-width="2" opacity="0.8"/>
+    <line x1="35" y1="20" x2="20" y2="10" stroke="#00d4ff" stroke-width="2" opacity="0.8"/>
+    <line x1="0" y1="40" x2="0" y2="20" stroke="#00d4ff" stroke-width="2" opacity="0.8"/>
+    <line x1="-35" y1="20" x2="-20" y2="10" stroke="#00d4ff" stroke-width="2" opacity="0.8"/>
+    <line x1="-35" y1="-20" x2="-20" y2="-10" stroke="#00d4ff" stroke-width="2" opacity="0.8"/>
+    
+    <!-- Center dot -->
+    <circle cx="0" cy="0" r="6" fill="#00d4ff" filter="url(#glow)"/>
+  </g>
+  
+  <!-- Company name -->
+  <text x="600" y="360" 
+        font-family="'JetBrains Mono', monospace" 
+        font-size="72" 
+        font-weight="400" 
+        fill="#00d4ff" 
+        text-anchor="middle" 
+        letter-spacing="8"
+        filter="url(#glow)">ARQON</text>
+  
+  <!-- Tagline -->
+  <text x="600" y="410" 
+        font-family="'JetBrains Mono', monospace" 
+        font-size="24" 
+        font-weight="300" 
+        fill="#0099cc" 
+        text-anchor="middle" 
+        letter-spacing="4">AI RESEARCH & DEVELOPMENT</text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="460" 
+        font-family="'JetBrains Mono', monospace" 
+        font-size="18" 
+        font-weight="300" 
+        fill="#004466" 
+        text-anchor="middle" 
+        letter-spacing="2">AUTONOMOUS SYSTEMS • CODE EVOLUTION • INTELLIGENT AGENTS</text>
+  
+  <!-- Bottom accent line -->
+  <line x1="300" y1="520" x2="900" y2="520" stroke="#00d4ff" stroke-width="1" opacity="0.4"/>
+  
+  <!-- URL -->
+  <text x="600" y="560" 
+        font-family="'JetBrains Mono', monospace" 
+        font-size="20" 
+        font-weight="400" 
+        fill="#00d4ff" 
+        text-anchor="middle" 
+        letter-spacing="3"
+        opacity="0.8">ARQON.AI</text>
+</svg>
