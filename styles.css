@@ -283,12 +283,20 @@ body {
     padding: var(--space-xl) 0;
 }
 
-.product-item-reverse {
-    direction: rtl;
+.product-item .product-content {
+    grid-column: 1;
 }
 
-.product-item-reverse > * {
-    direction: ltr;
+.product-item .product-image {
+    grid-column: 2;
+}
+
+.product-item-reverse .product-content {
+    grid-column: 2;
+}
+
+.product-item-reverse .product-image {
+    grid-column: 1;
 }
 
 .product-content {
