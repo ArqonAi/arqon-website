@@ -1,0 +1,32 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#0a0a0a"/>
+  
+  <!-- Shield outline -->
+  <path d="M 200 40 L 280 80 L 280 160 Q 280 220 200 260 Q 120 220 120 160 L 120 80 Z" 
+        fill="none" stroke="#00d4ff" stroke-width="2"/>
+  
+  <!-- Inner shield detail -->
+  <path d="M 200 60 L 260 90 L 260 160 Q 260 210 200 240 Q 140 210 140 160 L 140 90 Z" 
+        fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Lock symbol -->
+  <rect x="185" y="140" width="30" height="35" fill="none" stroke="#00d4ff" stroke-width="2"/>
+  <path d="M 190 140 L 190 125 Q 190 115 200 115 Q 210 115 210 125 L 210 140" 
+        fill="none" stroke="#00d4ff" stroke-width="2"/>
+  <circle cx="200" cy="157" r="3" fill="#00d4ff"/>
+  
+  <!-- Scanning lines -->
+  <line x1="120" y1="100" x2="280" y2="100" stroke="#00d4ff" stroke-width="1" opacity="0.3">
+    <animate attributeName="y1" values="80;260;80" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="80;260;80" dur="3s" repeatCount="indefinite"/>
+  </line>
+  
+  <!-- Corner brackets -->
+  <path d="M 100 60 L 100 40 L 120 40" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.5"/>
+  <path d="M 300 60 L 300 40 L 280 40" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.5"/>
+  <path d="M 100 240 L 100 260 L 120 260" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.5"/>
+  <path d="M 300 240 L 300 260 L 280 260" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Title -->
+  <text x="200" y="285" font-family="JetBrains Mono, monospace" font-size="12" fill="#00d4ff" text-anchor="middle" letter-spacing="2">CYBER SECURITY</text>
+</svg>

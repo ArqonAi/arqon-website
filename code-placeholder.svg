@@ -1,0 +1,24 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#0a0a0a"/>
+  <rect x="20" y="20" width="360" height="260" fill="none" stroke="#00d4ff" stroke-width="2"/>
+  
+  <!-- Code lines -->
+  <line x1="40" y1="60" x2="200" y2="60" stroke="#00d4ff" stroke-width="2" opacity="0.8"/>
+  <line x1="60" y1="85" x2="180" y2="85" stroke="#0099cc" stroke-width="2" opacity="0.6"/>
+  <line x1="60" y1="110" x2="220" y2="110" stroke="#0099cc" stroke-width="2" opacity="0.6"/>
+  <line x1="40" y1="135" x2="160" y2="135" stroke="#00d4ff" stroke-width="2" opacity="0.8"/>
+  
+  <!-- Terminal cursor -->
+  <rect x="170" y="130" width="12" height="18" fill="#00d4ff">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Code brackets -->
+  <text x="40" y="180" font-family="JetBrains Mono, monospace" font-size="48" fill="#00d4ff" opacity="0.4">&lt;/&gt;</text>
+  
+  <!-- Bottom accent -->
+  <line x1="40" y1="240" x2="360" y2="240" stroke="#00d4ff" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Title -->
+  <text x="200" y="265" font-family="JetBrains Mono, monospace" font-size="12" fill="#00d4ff" text-anchor="middle" letter-spacing="2">APOTHEOS</text>
+</svg>
