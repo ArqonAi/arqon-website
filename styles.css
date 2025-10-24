@@ -293,6 +293,8 @@ body {
 
 .product-content {
     padding: var(--space-lg);
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .product-image {
@@ -334,6 +336,8 @@ body {
     color: var(--text-secondary);
     margin-bottom: var(--space-lg);
     line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .product-link {
@@ -548,19 +552,23 @@ body {
         grid-template-columns: 1fr;
         gap: var(--space-lg);
         margin-bottom: var(--space-xl);
+        display: flex;
+        flex-direction: column;
     }
     
     .product-item-reverse {
         direction: ltr;
+        flex-direction: column;
     }
     
     .product-content {
         padding: var(--space-md);
         text-align: center;
+        order: 2;
     }
     
     .product-image {
-        order: -1;
+        order: 1;
     }
     
     .product-visual {
