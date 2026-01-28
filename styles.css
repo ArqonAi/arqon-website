@@ -657,17 +657,30 @@ body {
         padding: var(--space-lg) 0;
     }
     
+    .service-panel {
+        flex-direction: column;
+        text-align: center;
+    }
+    
     .service-image {
-        min-height: 200px;
-        padding: var(--space-lg);
+        order: -1;
+        min-height: 180px;
+        padding: var(--space-md);
     }
     
     .service-image img {
-        max-height: 160px;
+        max-height: 140px;
     }
     
     .service-info {
-        padding: var(--space-lg);
+        display: flex;
+        flex-direction: column;
+        padding: var(--space-md);
+    }
+    
+    .service-link {
+        margin-top: var(--space-md);
+        align-self: center;
     }
     
     .service-name {
