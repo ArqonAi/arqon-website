@@ -1,0 +1,61 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#0a0a0a"/>
+  
+  <!-- Chart container -->
+  <rect x="40" y="40" width="320" height="200" fill="none" stroke="#00d4ff" stroke-width="2"/>
+  
+  <!-- Grid lines -->
+  <line x1="40" y1="90" x2="360" y2="90" stroke="#00d4ff" stroke-width="0.5" opacity="0.2"/>
+  <line x1="40" y1="140" x2="360" y2="140" stroke="#00d4ff" stroke-width="0.5" opacity="0.2"/>
+  <line x1="40" y1="190" x2="360" y2="190" stroke="#00d4ff" stroke-width="0.5" opacity="0.2"/>
+  
+  <line x1="90" y1="40" x2="90" y2="240" stroke="#00d4ff" stroke-width="0.5" opacity="0.2"/>
+  <line x1="150" y1="40" x2="150" y2="240" stroke="#00d4ff" stroke-width="0.5" opacity="0.2"/>
+  <line x1="210" y1="40" x2="210" y2="240" stroke="#00d4ff" stroke-width="0.5" opacity="0.2"/>
+  <line x1="270" y1="40" x2="270" y2="240" stroke="#00d4ff" stroke-width="0.5" opacity="0.2"/>
+  <line x1="330" y1="40" x2="330" y2="240" stroke="#00d4ff" stroke-width="0.5" opacity="0.2"/>
+  
+  <!-- Axes -->
+  <line x1="40" y1="240" x2="360" y2="240" stroke="#00d4ff" stroke-width="2"/>
+  <line x1="40" y1="40" x2="40" y2="240" stroke="#00d4ff" stroke-width="2"/>
+  
+  <!-- Growth line chart -->
+  <polyline 
+    points="60,210 90,195 150,170 210,140 270,100 330,70" 
+    fill="none" 
+    stroke="#00d4ff" 
+    stroke-width="3" 
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+  
+  <!-- Data points -->
+  <circle cx="60" cy="210" r="4" fill="#00d4ff" opacity="0.8"/>
+  <circle cx="90" cy="195" r="4" fill="#00d4ff"/>
+  <circle cx="150" cy="170" r="4" fill="#00d4ff"/>
+  <circle cx="210" cy="140" r="4" fill="#00d4ff"/>
+  <circle cx="270" cy="100" r="4" fill="#00d4ff"/>
+  <circle cx="330" cy="70" r="5" fill="#00d4ff">
+    <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Bar chart overlay (subtle) -->
+  <rect x="80" y="200" width="15" height="40" fill="#00d4ff" opacity="0.15"/>
+  <rect x="140" y="180" width="15" height="60" fill="#00d4ff" opacity="0.15"/>
+  <rect x="200" y="150" width="15" height="90" fill="#00d4ff" opacity="0.15"/>
+  <rect x="260" y="110" width="15" height="130" fill="#00d4ff" opacity="0.15"/>
+  <rect x="320" y="80" width="15" height="160" fill="#00d4ff" opacity="0.15"/>
+  
+  <!-- Trend arrow -->
+  <g transform="translate(330, 60)">
+    <line x1="0" y1="0" x2="20" y2="-15" stroke="#00d4ff" stroke-width="2" opacity="0.7"/>
+    <polygon points="20,-15 15,-12 18,-18" fill="#00d4ff" opacity="0.7"/>
+  </g>
+  
+  <!-- Analytics indicators -->
+  <circle cx="350" cy="55" r="8" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Title -->
+  <text x="200" y="285" font-family="JetBrains Mono, monospace" font-size="12" fill="#00d4ff" text-anchor="middle" letter-spacing="2">GROWTH ANALYTICS</text>
+</svg>
