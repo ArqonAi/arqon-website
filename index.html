@@ -4,29 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arqon, Inc - AI R&D</title>
-    <meta name="description" content="ARQON develops advanced artificial intelligence solutions and autonomous systems. Home to Apotheos, an autonomous development organism for code evolution.">
-    <meta name="keywords" content="AI, artificial intelligence, autonomous systems, code evolution, IDE, CLI, development platform, machine learning, automation">
-    <meta name="author" content="ARQON">
-    <meta name="robots" content="index, follow">
+    <meta name="description" content="ARQON develops advanced artificial intelligence solutions and autonomous systems. 8 active AI services including Chat, Code, Design, Security, CRM, Sales, Accounting, and Publishing platforms.">
+    <meta name="keywords" content="AI, artificial intelligence, autonomous systems, machine learning, AI services, code generation, AI chat, vector graphics, cybersecurity, CRM, sales automation, accounting software, content generation, AI platform">
+    <meta name="author" content="ARQON, Inc">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://arqon.ai/">
-    <meta property="og:title" content="ARQON - AI Research & Development">
-    <meta property="og:description" content="ARQON develops advanced artificial intelligence solutions and autonomous systems. Autonomous code evolution, intelligent agents, and next-generation AI platforms.">
-    <meta property="og:image" content="https://arqon.ai/og-card.svg">
+    <meta property="og:title" content="ARQON - Advanced AI Research & Development | 8 Active AI Services">
+    <meta property="og:description" content="Cutting-edge artificial intelligence solutions and autonomous systems. Chat, Code, Design, Security, CRM, Sales, Accounting, and Publishing platforms powered by AI.">
+    <meta property="og:image" content="https://arqon.ai/og-image.png">
+    <meta property="og:image:secure_url" content="https://arqon.ai/og-image.png">
+    <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ARQON - Advanced AI Research & Development Platform">
     <meta property="og:site_name" content="ARQON">
+    <meta property="og:locale" content="en_US">
     
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://arqon.ai/">
-    <meta property="twitter:title" content="ARQON - AI Research & Development">
-    <meta property="twitter:description" content="ARQON develops advanced artificial intelligence solutions and autonomous systems. Autonomous code evolution, intelligent agents, and next-generation AI platforms.">
-    <meta property="twitter:image" content="https://arqon.ai/og-card.svg">
-    <meta property="twitter:site" content="@arqonai">
-    <meta property="twitter:creator" content="@arqonai">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://arqon.ai/">
+    <meta name="twitter:title" content="ARQON - Advanced AI Research & Development">
+    <meta name="twitter:description" content="8 active AI services: Chat, Code, Design, Security, CRM, Sales, Accounting, Publishing. Next-generation autonomous systems.">
+    <meta name="twitter:image" content="https://arqon.ai/twitter-card.png">
+    <meta name="twitter:image:alt" content="ARQON AI Platform">
+    <meta name="twitter:site" content="@arqonai">
+    <meta name="twitter:creator" content="@arqonai">
     
     <!-- Additional SEO -->
     <meta name="theme-color" content="#00d4ff">
@@ -46,17 +53,37 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Arqon",
+      "@type": "Organization",
+      "name": "ARQON, Inc",
+      "legalName": "ARQON, Incorporated",
       "url": "https://arqon.ai",
-      "applicationCategory": "AI Infrastructure",
-      "operatingSystem": "All",
-      "offers": {
-        "@type": "Offer",
-        "price": "0.00",
-        "priceCurrency": "USD"
-      },
-      "description": "Arqon is the substrate for emergent intelligent systems."
+      "logo": "https://arqon.ai/arqon-logo.png",
+      "description": "ARQON develops advanced artificial intelligence solutions and autonomous systems. Provider of 8 AI-powered services including Chat, Code, Design, Security, CRM, Sales, Accounting, and Publishing platforms.",
+      "foundingDate": "2024",
+      "email": "hello@arqon.ai",
+      "sameAs": [
+        "https://x.com/arqonai",
+        "https://github.com/arqonai",
+        "https://arqonai.substack.com"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Support",
+        "email": "hello@arqon.ai"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "ARQON",
+      "url": "https://arqon.ai",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://arqon.ai/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
     }
     </script>
 </head>
@@ -66,15 +93,27 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
-            <div class="logo">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.5rem;">
                 <img src="arqon-logo.png" alt="Arqon" class="logo-icon" />
                 <span class="logo-text">ARQON</span>
-            </div>
+            </a>
             <div class="nav-links">
                 <a href="browser.html" class="nav-link">BROWSER</a>
-                <a href="https://chat.arqon.ai" class="nav-link" target="_blank">CHAT</a>
-                <a href="https://code.arqon.ai" class="nav-link" target="_blank">CODE</a>
-                <a href="https://security.arqon.ai" class="nav-link" target="_blank">SECURITY</a>
+                <div class="nav-dropdown">
+                    <button class="nav-link nav-dropdown-toggle">SERVICES ▾</button>
+                    <div class="nav-dropdown-menu">
+                        <!-- <a href="https://accounting.arqon.ai" class="nav-dropdown-item" target="_blank">ACCOUNTING</a> -->
+                        <a href="https://chat.arqon.ai" class="nav-dropdown-item" target="_blank">CHAT</a>
+                        <a href="https://code.arqon.ai" class="nav-dropdown-item" target="_blank">CODE</a>
+                        <!-- <a href="https://crm.arqon.ai" class="nav-dropdown-item" target="_blank">CRM</a> -->
+                        <a href="https://design.arqon.ai" class="nav-dropdown-item" target="_blank">DESIGN</a>
+                        <!-- <a href="https://publish.arqon.ai" class="nav-dropdown-item" target="_blank">PUBLISH</a> -->
+                        <!-- <a href="https://sales.arqon.ai" class="nav-dropdown-item" target="_blank">SALES</a> -->
+                        <a href="https://security.arqon.ai" class="nav-dropdown-item" target="_blank">SECURITY</a>
+                    </div>
+                </div>
+                <!-- <a href="pricing.html" class="nav-link">PRICING</a> -->
+                <!-- <a href="https://account.arqon.ai" id="auth-button" class="nav-link nav-auth-button" target="_blank">SIGN UP</a> -->
             </div>
         </div>
     </nav>
@@ -92,7 +131,7 @@
                 </p>
                 <div class="hero-stats">
                     <div class="stat">
-                        <div class="stat-number">01</div>
+                        <div class="stat-number">09</div>
                         <div class="stat-label">ACTIVE</div>
                     </div>
                     <div class="stat">
@@ -127,80 +166,170 @@
         </div>
     </main>
 
-    <!-- Products Section -->
-    <section class="products">
-        <div class="products-container">
-            <h2 class="products-title">PLATFORMS</h2>
+    <!-- Services Section - Tabbed Display -->
+    <section class="services-section">
+        <div class="services-container">
+            <h2 class="services-title">PLATFORMS</h2>
             
-            <!-- Section 1: Chat (Text Left, Image Right) -->
-            <div class="product-item">
-                <div class="product-content">
-                    <h3 class="product-name">LLM CHAT INTERFACE</h3>
-                    <p class="product-description">
-                        Intelligent conversational AI with advanced context injection capabilities. 
-                        Custom .pixe file creation for searchable knowledge base and seamless Web3 
-                        interactions for decentralized application integration.
-                    </p>
-                    <a href="https://chat.arqon.ai" class="product-link" target="_blank">
-                        START CHATTING →
-                    </a>
+            <div class="services-tabbed">
+                <!-- Content Area (Left) -->
+                <div class="service-content">
+                    <div class="service-panel active" data-service="chat">
+                        <div class="service-info">
+                            <h3 class="service-name">CHAT</h3>
+                            <p class="service-description">
+                                Conversations that remember. The system maintains context across sessions through persistent 
+                                memory graphs, allowing continuity over days or weeks. Upload proprietary knowledge bases 
+                                and interact with blockchain networks using natural language. Queries route dynamically 
+                                across frontier models based on task complexity.
+                            </p>
+                            <a href="https://chat.arqon.ai" class="service-link" target="_blank">ACCESS →</a>
+                        </div>
+                        <div class="service-image">
+                            <img src="chat-placeholder.svg" alt="Chat Platform" />
+                        </div>
+                    </div>
+                    
+                    <div class="service-panel" data-service="code">
+                        <div class="service-info">
+                            <h3 class="service-name">CODE</h3>
+                            <p class="service-description">
+                                Software that writes itself. The system reasons over entire codebases and modifies them 
+                                autonomously. Multiple agents work in parallel on complex development tasks. Formal 
+                                verification ensures mathematical correctness where required. Dependencies resolve 
+                                deterministically for reproducible builds across environments.
+                            </p>
+                            <a href="https://code.arqon.ai" class="service-link" target="_blank">ACCESS →</a>
+                        </div>
+                        <div class="service-image">
+                            <img src="code-placeholder.svg" alt="Code Platform" />
+                        </div>
+                    </div>
+                    
+                    <div class="service-panel" data-service="design">
+                        <div class="service-info">
+                            <h3 class="service-name">DESIGN</h3>
+                            <p class="service-description">
+                                Visual assets generated on demand. The system produces vector and raster graphics through 
+                                compositional reasoning over spatial relationships and aesthetic rules. Parametric controls 
+                                enable programmatic variation across design families. Brand consistency enforces automatically 
+                                through learned style representations.
+                            </p>
+                            <a href="https://design.arqon.ai" class="service-link" target="_blank">ACCESS →</a>
+                        </div>
+                        <div class="service-image">
+                            <img src="design-placeholder.svg" alt="Design Platform" />
+                        </div>
+                    </div>
+                    
+                    <div class="service-panel" data-service="publish">
+                        <div class="service-info">
+                            <h3 class="service-name">PUBLISH</h3>
+                            <p class="service-description">
+                                Long form content at scale. The system generates technical documentation, research papers, 
+                                and extended prose through hierarchical reasoning over document structure. Output optimizes 
+                                for discoverability and reader engagement. Distribution automates across publication 
+                                channels with appropriate formatting for each.
+                            </p>
+                            <a href="https://publish.arqon.ai" class="service-link" target="_blank">ACCESS →</a>
+                        </div>
+                        <div class="service-image">
+                            <img src="publish-placeholder.svg" alt="Publish Platform" />
+                        </div>
+                    </div>
+                    
+                    <div class="service-panel" data-service="legal">
+                        <div class="service-info">
+                            <h3 class="service-name">LEGAL</h3>
+                            <p class="service-description">
+                                Contracts analyzed computationally. The system understands clause level semantics and 
+                                monitors compliance across jurisdictions through regulatory knowledge graphs. Risk 
+                                quantifies probabilistically based on relevant precedent. Documents triage automatically 
+                                with key provisions extracted and surfaced.
+                            </p>
+                            <span class="service-link coming-soon">COMING SOON</span>
+                        </div>
+                        <div class="service-image">
+                            <img src="legal-placeholder.svg" alt="Legal Platform" />
+                        </div>
+                    </div>
+                    
+                    <div class="service-panel" data-service="accounting">
+                        <div class="service-info">
+                            <h3 class="service-name">ACCOUNTING</h3>
+                            <p class="service-description">
+                                Financial state tracked continuously. Ledgers synchronize in real time across accounts 
+                                and entities. Intercompany transactions reconcile automatically during consolidation. 
+                                Tax positions optimize through regulatory analysis. Compliance maintains itself with 
+                                complete audit trails and anomaly detection.
+                            </p>
+                            <span class="service-link coming-soon">COMING SOON</span>
+                        </div>
+                        <div class="service-image">
+                            <img src="accounting-placeholder.svg" alt="Accounting Platform" />
+                        </div>
+                    </div>
+                    
+                    <div class="service-panel" data-service="crm">
+                        <div class="service-info">
+                            <h3 class="service-name">CRM</h3>
+                            <p class="service-description">
+                                Relationships unified into coherent intelligence. The system resolves entities across 
+                                data sources and orchestrates engagement through behavioral triggers. Analytics span 
+                                the full customer lifecycle with predictive churn modeling. Retention optimizes through 
+                                personalized intervention recommendations.
+                            </p>
+                            <span class="service-link coming-soon">COMING SOON</span>
+                        </div>
+                        <div class="service-image">
+                            <img src="crm-placeholder.svg" alt="CRM Platform" />
+                        </div>
+                    </div>
+                    
+                    <div class="service-panel" data-service="sales">
+                        <div class="service-info">
+                            <h3 class="service-name">SALES</h3>
+                            <p class="service-description">
+                                Revenue traced to its sources. Attribution models track acquisition across channels 
+                                while campaigns orchestrate with adaptive message sequencing. Performance analytics 
+                                update in real time with causal inference guiding optimization. Leads qualify 
+                                probabilistically through aggregated behavioral signals.
+                            </p>
+                            <span class="service-link coming-soon">COMING SOON</span>
+                        </div>
+                        <div class="service-image">
+                            <img src="sales-placeholder.svg" alt="Sales Platform" />
+                        </div>
+                    </div>
+                    
+                    <div class="service-panel" data-service="security">
+                        <div class="service-info">
+                            <h3 class="service-name">SECURITY</h3>
+                            <p class="service-description">
+                                Vulnerabilities discovered before exploitation. Static and dynamic analysis runs 
+                                continuously across infrastructure. Threats trigger automated containment and 
+                                remediation workflows. Zero trust enforces through cryptographic attestation at 
+                                every boundary. Penetration testing runs continuously alongside compliance monitoring.
+                            </p>
+                            <a href="https://security.arqon.ai" class="service-link" target="_blank">ACCESS →</a>
+                        </div>
+                        <div class="service-image">
+                            <img src="security-placeholder.svg" alt="Security Platform" />
+                        </div>
+                    </div>
                 </div>
-                <div class="product-image">
-                    <img src="chat-placeholder.svg" alt="LLM Chat Interface" class="product-visual" />
-                </div>
-            </div>
-            
-            <!-- Section 2: Browser (Image Left, Text Right) -->
-            <div class="product-item product-item-reverse">
-                <div class="product-image">
-                    <img src="browser-placeholder.svg" alt="Agentic Browser" class="product-visual" />
-                </div>
-                <div class="product-content">
-                    <h3 class="product-name">AGENTIC BROWSER</h3>
-                    <p class="product-description">
-                        Next-generation autonomous web navigation with intelligent automation. 
-                        Context-aware browsing that understands intent and executes complex 
-                        web tasks with unprecedented efficiency and precision.
-                    </p>
-                    <a href="browser.html" class="product-link">
-                        EXPLORE BROWSER →
-                    </a>
-                </div>
-            </div>
-            
-            <!-- Section 3: Security (Text Left, Image Right) -->
-            <div class="product-item">
-                <div class="product-content">
-                    <h3 class="product-name">CYBER SECURITY TOOLKIT</h3>
-                    <p class="product-description">
-                        Advanced agentic cybersecurity platform with real-time threat detection. 
-                        Autonomous security operations that identify, analyze, and neutralize 
-                        threats before they compromise your infrastructure.
-                    </p>
-                    <a href="https://security.arqon.ai" class="product-link" target="_blank">
-                        ACCESS SECURITY →
-                    </a>
-                </div>
-                <div class="product-image">
-                    <img src="security-placeholder.svg" alt="Cyber Security Toolkit" class="product-visual" />
-                </div>
-            </div>
-            
-            <!-- Section 4: Code (Image Left, Text Right) -->
-            <div class="product-item product-item-reverse">
-                <div class="product-image">
-                    <img src="code-placeholder.svg" alt="Code Platform" class="product-visual" />
-                </div>
-                <div class="product-content">
-                    <h3 class="product-name">CODE EVOLUTION ENGINE</h3>
-                    <p class="product-description">
-                        Autonomous development organism powered by multi-agent intelligence. 
-                        Revolutionary code evolution platform with adaptive learning capabilities 
-                        that transforms how software is created and maintained.
-                    </p>
-                    <a href="https://code.arqon.ai" class="product-link" target="_blank">
-                        LAUNCH PLATFORM →
-                    </a>
+                
+                <!-- Tabs (Left) -->
+                <div class="service-tabs">
+                    <button class="service-tab active" data-target="chat">CHAT</button>
+                    <button class="service-tab" data-target="code">CODE</button>
+                    <button class="service-tab" data-target="design">DESIGN</button>
+                    <button class="service-tab" data-target="publish">PUBLISH</button>
+                    <button class="service-tab" data-target="legal">LEGAL</button>
+                    <button class="service-tab" data-target="accounting">ACCOUNTING</button>
+                    <button class="service-tab" data-target="crm">CRM</button>
+                    <button class="service-tab" data-target="sales">SALES</button>
+                    <button class="service-tab" data-target="security">SECURITY</button>
                 </div>
             </div>
         </div>
@@ -210,14 +339,170 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-copyright">
-                © 2025 ARQON, INC | All Rights Reserved
+                © 2026 ARQON, INC | All Rights Reserved
             </div>
             <div class="footer-links">
-                <a href="privacy.html" class="footer-link">PRIVACY</a>
-                <a href="terms.html" class="footer-link">TERMS</a>
+                <a href="#" class="footer-link" id="contact-link">CONTACT</a>
+                <a href="#" class="footer-link" id="privacy-link">PRIVACY</a>
+                <a href="#" class="footer-link" id="terms-link">TERMS</a>
             </div>
         </div>
     </footer>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content" style="max-width: 600px; text-align: left;">
+            <span class="modal-close">&times;</span>
+            <h3 class="modal-title">CONTACT US</h3>
+            <p class="modal-description" style="margin-bottom: 2rem;">Send us a message and we'll get back to you</p>
+            
+            <form id="contact-form" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <label style="font-size: 11px; color: var(--text-primary); letter-spacing: 0.1em;">NAME *</label>
+                    <input type="text" name="name" required 
+                           style="background: var(--bg-secondary); border: 1px solid var(--text-muted); padding: 0.75rem; color: var(--text-primary); font-family: var(--font-mono); font-size: 13px; outline: none; transition: border-color 0.2s;"
+                           onfocus="this.style.borderColor='var(--text-primary)'" 
+                           onblur="this.style.borderColor='var(--text-muted)'">
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <label style="font-size: 11px; color: var(--text-primary); letter-spacing: 0.1em;">EMAIL *</label>
+                    <input type="email" name="email" required 
+                           style="background: var(--bg-secondary); border: 1px solid var(--text-muted); padding: 0.75rem; color: var(--text-primary); font-family: var(--font-mono); font-size: 13px; outline: none; transition: border-color 0.2s;"
+                           onfocus="this.style.borderColor='var(--text-primary)'" 
+                           onblur="this.style.borderColor='var(--text-muted)'">
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <label style="font-size: 11px; color: var(--text-primary); letter-spacing: 0.1em;">SUBJECT</label>
+                    <input type="text" name="subject" 
+                           style="background: var(--bg-secondary); border: 1px solid var(--text-muted); padding: 0.75rem; color: var(--text-primary); font-family: var(--font-mono); font-size: 13px; outline: none; transition: border-color 0.2s;"
+                           onfocus="this.style.borderColor='var(--text-primary)'" 
+                           onblur="this.style.borderColor='var(--text-muted)'">
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <label style="font-size: 11px; color: var(--text-primary); letter-spacing: 0.1em;">MESSAGE *</label>
+                    <textarea name="message" rows="5" required
+                              style="background: var(--bg-secondary); border: 1px solid var(--text-muted); padding: 0.75rem; color: var(--text-primary); font-family: var(--font-mono); font-size: 13px; outline: none; transition: border-color 0.2s; resize: vertical;"
+                              onfocus="this.style.borderColor='var(--text-primary)'" 
+                              onblur="this.style.borderColor='var(--text-muted)'" 
+                              placeholder="How can we help you?"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="margin-top: 1rem; cursor: pointer;">
+                    SEND MESSAGE →
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Privacy Modal -->
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content" style="max-width: 700px; max-height: 80vh; overflow-y: auto; text-align: left;">
+            <span class="modal-close">&times;</span>
+            <h3 class="modal-title">PRIVACY POLICY</h3>
+            <p class="modal-description" style="margin-bottom: 2rem;">LAST UPDATED: JAN 2025 • EFFECTIVE: JAN 01 2025</p>
+            
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                <section>
+                    <h4 style="color: var(--text-primary); font-size: 14px; margin-bottom: 0.5rem; letter-spacing: 0.1em;">DATA COLLECTION</h4>
+                    <p style="color: var(--text-secondary); font-size: 12px; margin-bottom: 0.5rem;">minimal information collection:</p>
+                    <div style="color: var(--text-secondary); font-size: 12px; display: flex; flex-direction: column; gap: 0.25rem; padding-left: 1rem;">
+                        <div>• usage analytics (anonymous)</div>
+                        <div>• contact data (voluntary)</div>
+                        <div>• technical logs (security)</div>
+                    </div>
+                </section>
+
+                <section>
+                    <h4 style="color: var(--text-primary); font-size: 14px; margin-bottom: 0.5rem; letter-spacing: 0.1em;">DATA USAGE</h4>
+                    <div style="color: var(--text-secondary); font-size: 12px; display: flex; flex-direction: column; gap: 0.25rem; padding-left: 1rem;">
+                        <div>• service improvement</div>
+                        <div>• security monitoring</div>
+                        <div>• legal compliance</div>
+                    </div>
+                </section>
+
+                <section>
+                    <h4 style="color: var(--text-primary); font-size: 14px; margin-bottom: 0.5rem; letter-spacing: 0.1em;">DATA SHARING</h4>
+                    <p style="color: var(--text-secondary); font-size: 12px; margin-bottom: 0.5rem;">no third-party transfers except:</p>
+                    <div style="color: var(--text-secondary); font-size: 12px; display: flex; flex-direction: column; gap: 0.25rem; padding-left: 1rem;">
+                        <div>• explicit consent</div>
+                        <div>• legal requirements</div>
+                        <div>• security protection</div>
+                    </div>
+                </section>
+
+                <section>
+                    <h4 style="color: var(--text-primary); font-size: 14px; margin-bottom: 0.5rem; letter-spacing: 0.1em;">USER RIGHTS</h4>
+                    <div style="color: var(--text-secondary); font-size: 12px; display: flex; flex-direction: column; gap: 0.25rem; padding-left: 1rem;">
+                        <div>• access personal data</div>
+                        <div>• correct information</div>
+                        <div>• request deletion</div>
+                        <div>• opt-out communications</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms Modal -->
+    <div id="terms-modal" class="modal">
+        <div class="modal-content" style="max-width: 700px; max-height: 80vh; overflow-y: auto; text-align: left;">
+            <span class="modal-close">&times;</span>
+            <h3 class="modal-title">TERMS OF SERVICE</h3>
+            <p class="modal-description" style="margin-bottom: 2rem;">LAST UPDATED: JAN 2025 • EFFECTIVE: JAN 01 2025</p>
+            
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                <section>
+                    <h4 style="color: var(--text-primary); font-size: 14px; margin-bottom: 0.5rem; letter-spacing: 0.1em;">AGREEMENT TO TERMS</h4>
+                    <p style="color: var(--text-secondary); font-size: 12px;">By accessing or using Arqon's services, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing our services.</p>
+                </section>
+
+                <section>
+                    <h4 style="color: var(--text-primary); font-size: 14px; margin-bottom: 0.5rem; letter-spacing: 0.1em;">DESCRIPTION OF SERVICE</h4>
+                    <p style="color: var(--text-secondary); font-size: 12px;">Arqon provides advanced artificial intelligence solutions and autonomous development platforms. Our services are designed to accelerate innovation and enable breakthrough technological capabilities for organizations worldwide.</p>
+                </section>
+
+                <section>
+                    <h4 style="color: var(--text-primary); font-size: 14px; margin-bottom: 0.5rem; letter-spacing: 0.1em;">USER RESPONSIBILITIES</h4>
+                    <p style="color: var(--text-secondary); font-size: 12px; margin-bottom: 0.5rem;">You are responsible for:</p>
+                    <div style="color: var(--text-secondary); font-size: 12px; display: flex; flex-direction: column; gap: 0.25rem; padding-left: 1rem;">
+                        <div>• Maintaining the confidentiality of your account credentials</div>
+                        <div>• All activities that occur under your account</div>
+                        <div>• Ensuring your use complies with applicable laws and regulations</div>
+                    </div>
+                </section>
+
+                <section>
+                    <h4 style="color: var(--text-primary); font-size: 14px; margin-bottom: 0.5rem; letter-spacing: 0.1em;">LICENSE</h4>
+                    <p style="color: var(--text-secondary); font-size: 12px; margin-bottom: 0.5rem;">limited personal use only:</p>
+                    <div style="color: var(--text-secondary); font-size: 12px; display: flex; flex-direction: column; gap: 0.25rem; padding-left: 1rem;">
+                        <div>• no modification or copying</div>
+                        <div>• no commercial use</div>
+                        <div>• no reverse engineering</div>
+                        <div>• no removal of copyright notices</div>
+                    </div>
+                </section>
+
+                <section>
+                    <h4 style="color: var(--text-primary); font-size: 14px; margin-bottom: 0.5rem; letter-spacing: 0.1em;">DISCLAIMER</h4>
+                    <p style="color: var(--text-secondary); font-size: 12px;">materials provided "as is" without warranties</p>
+                </section>
+
+                <section>
+                    <h4 style="color: var(--text-primary); font-size: 14px; margin-bottom: 0.5rem; letter-spacing: 0.1em;">LIMITATIONS</h4>
+                    <p style="color: var(--text-secondary); font-size: 12px;">no liability for damages arising from use</p>
+                </section>
+
+                <section>
+                    <h4 style="color: var(--text-primary); font-size: 14px; margin-bottom: 0.5rem; letter-spacing: 0.1em;">MODIFICATIONS</h4>
+                    <p style="color: var(--text-secondary); font-size: 12px;">terms may be revised without notice</p>
+                </section>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
